@@ -27,7 +27,7 @@ public class BootStrapData implements CommandLineRunner {
     public void run(String... args) throws Exception {
         System.out.println("Started in Bootstrap");
 
-        Publisher pub = new Publisher("John", "Publisher", "negro Arooyo Lane", "Albuqurque", "New Mexico", "34762");
+        Publisher pub = new Publisher("John Publisher", "negro Arooyo Lane", "Albuqurque", "New Mexico", "34762");
         publisherRepository.save(pub);
         System.out.println("Number of Publishers: " + publisherRepository.count());
 
